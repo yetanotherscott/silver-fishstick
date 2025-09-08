@@ -8,7 +8,7 @@ var UnminedMapProperties = {
     minRegionZ: -3,
     maxRegionX: 6,
     maxRegionZ: 4,
-    worldName: "Terra Firma Online 9/7/2025 06:38:07PM - Copy",
+    worldName: "Terra Firma Online 9/7/2025 10:51:21PM - Copy",
     background: "",
     markers: new Array(),
     enableGrid: true,
