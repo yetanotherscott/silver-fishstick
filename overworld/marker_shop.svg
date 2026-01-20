@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Emerald -->
+  <rect x="8" y="8" width="16" height="16" fill="#008000" rx="2"/>
+  <rect x="10" y="10" width="12" height="12" fill="#00FF00" rx="1"/>
+  
+  <!-- Emerald facets -->
+  <path fill="#32CD32" d="M16 10l6 6-6 6-6-6 6-6z"/>
+  <path fill="#228B22" d="M10 16l6 6 6-6-6-6-6 6z"/>
+  
+  <!-- Trading table -->
+  <rect x="6" y="22" width="20" height="4" fill="#8B4513"/>
+  <rect x="8" y="24" width="16" height="2" fill="#A0522D"/>
+  
+  <!-- Villager -->
+  <circle cx="16" cy="26" r="2" fill="#8B4513"/>
+  <rect x="14" y="28" width="4" height="2" fill="#32CD32"/>
+</svg>

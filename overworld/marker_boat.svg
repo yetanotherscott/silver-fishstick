@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Minecraft Boat -->
+  <rect x="8" y="20" width="16" height="4" fill="#8B4513"/>
+  <rect x="10" y="18" width="12" height="4" fill="#A0522D"/>
+  <rect x="12" y="16" width="8" height="4" fill="#D2691E"/>
+  
+  <!-- Mast -->
+  <rect x="15" y="10" width="2" height="8" fill="#8B4513"/>
+  
+  <!-- Sail -->
+  <rect x="10" y="8" width="12" height="8" fill="#FFFFFF"/>
+  <rect x="12" y="10" width="8" height="4" fill="#1E90FF"/>
+  
+  <!-- Water/Waves -->
+  <rect x="4" y="24" width="24" height="4" fill="#1E90FF"/>
+  <path fill="#42A5F5" d="M4 24c4-2 8-2 12 0 4-2 8-2 12 0v4H4z"/>
+  
+  <!-- Oar -->
+  <rect x="6" y="18" width="2" height="6" fill="#8B4513"/>
+  <rect x="24" y="18" width="2" height="6" fill="#8B4513"/>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "markers": [
+    {
+      "id": "spawn",
+      "x": 0,
+      "z": 0,
+      "image": "marker_house.png",
+      "imageAnchor": [0.5, 1],
+      "imageScale": 0.5,
+      "text": "Spawn Area",
+      "textColor": "white",
+      "offsetY": 5
+    },
+    {
+      "id": "base1",
+      "x": 100,
+      "z": -200,
+      "image": "marker_tower.png",
+      "imageAnchor": [0.5, 1],
+      "imageScale": 0.5,
+      "text": "Main Base",
+      "textColor": "#FFAA00",
+      "offsetY": 5
+    },
+    {
+      "id": "village",
+      "x": -300,
+      "z": 150,
+      "image": "marker_village.png", 
+      "imageAnchor": [0.5, 1],
+      "imageScale": 0.5,
+      "text": "Desert Village",
+      "textColor": "white",
+      "offsetY": 5
+    }
+  ]
+}

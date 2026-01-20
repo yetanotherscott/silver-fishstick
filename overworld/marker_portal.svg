@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Nether Portal Frame -->
+  <rect x="6" y="6" width="20" height="20" fill="#191970" rx="1"/>
+  <rect x="8" y="8" width="16" height="16" fill="#4B0082"/>
+  <!-- Purple portal effect -->
+  <rect x="10" y="10" width="12" height="12" fill="#9370DB"/>
+  <path fill="#8A2BE2" d="M10 10l12 12M22 10L10 22" stroke="#8A2BE2" stroke-width="1"/>
+  <!-- Obsidian corners -->
+  <rect x="6" y="6" width="4" height="4" fill="#0A0A2A"/>
+  <rect x="22" y="6" width="4" height="4" fill="#0A0A2A"/>
+  <rect x="6" y="22" width="4" height="4" fill="#0A0A2A"/>
+  <rect x="22" y="22" width="4" height="4" fill="#0A0A2A"/>
+</svg>
