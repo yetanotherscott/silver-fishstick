@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Firma - Overworld Key Locations</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Minecraftia&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --mc-dark-green: #3b5c1e;
+            --mc-green: #5a7a34;
+            --mc-light-green: #7ba159;
+            --mc-brown: #8b6b3d;
+            --mc-light-brown: #a38452;
+            --mc-dark-brown: #4a3719;
+            --mc-red: #a52a2a;
+            --mc-dark-red: #7a1f1f;
+            --mc-text: #f0f0f0;
+            --mc-text-shadow: #3a3a3a;
+            --mc-blue: #42A5F5;
+            --mc-purple: #9D4EDD;
+            --mc-gold: #FFA600;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+            color: var(--mc-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Minecraftia', monospace;
+            font-size: 2.8rem;
+            color: var(--mc-light-green);
+            text-shadow: 3px 3px 0 var(--mc-dark-green),
+                         5px 5px 0 var(--mc-text-shadow);
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: var(--mc-green);
+            color: white;
+            padding: 10px 20px;
+            font-family: 'Minecraftia', monospace;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 2px solid var(--mc-light-green);
+            margin: 20px 0;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover {
+            background-color: var(--mc-light-green);
+            transform: translateY(-2px);
+        }
+
+        .locations-container {
+            background-color: rgba(90, 122, 52, 0.1);
+            border: 2px solid var(--mc-green);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .location-category {
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-family: 'Minecraftia', monospace;
+            font-size: 1.8rem;
+            color: var(--mc-light-green);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--mc-green);
+            margin-bottom: 20px;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .location-card {
+            background-color: rgba(139, 107, 61, 0.2);
+            border: 2px solid var(--mc-brown);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--mc-light-brown);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .location-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: var(--mc-light-green);
+        }
+
+        .location-name {
+            font-family: 'Minecraftia', monospace;
+            font-size: 1.4rem;
+            color: var(--mc-light-green);
+        }
+
+        .location-type {
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: var(--mc-green);
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .location-coords {
+            font-family: monospace;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: var(--mc-gold);
+            border-left: 3px solid var(--mc-gold);
+        }
+
+        .location-description {
+            color: var(--mc-light-brown);
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .map-link {
+            display: inline-block;
+            background-color: var(--mc-brown);
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .map-link:hover {
+            background-color: var(--mc-light-brown);
+        }
+
+        .coordinates-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .coordinates-table th {
+            background-color: var(--mc-green);
+            padding: 15px;
+            text-align: left;
+            font-family: 'Minecraftia', monospace;
+            color: white;
+        }
+
+        .coordinates-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(90, 122, 52, 0.3);
+        }
+
+        .coordinates-table tr:hover {
+            background-color: rgba(90, 122, 52, 0.1);
+        }
+
+        .coord-highlight {
+            font-family: monospace;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--mc-gold);
+        }
+
+        .coordinate-help {
+            background-color: rgba(139, 107, 61, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid var(--mc-gold);
+        }
+
+        .coordinate-help h3 {
+            color: var(--mc-light-green);
+            margin-bottom: 10px;
+            font-family: 'Minecraftia', monospace;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid var(--mc-brown);
+            color: var(--mc-light-brown);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .coordinates-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TERRA FIRMA OVERWORLD</h1>
+            <p style="color: var(--mc-light-brown); font-size: 1.2rem;">Key Locations & Coordinates</p>
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> BACK TO MAIN PAGE
+            </a>
+        </header>
+
+        <div class="locations-container">
+            <div class="location-category">
+                <h2 class="category-title"><i class="fas fa-home"></i> PLAYER BASES & HOMES</h2>
+                <div class="location-grid">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <div>
+                                <span class="location-name">Spawn Point</span>
+                                <span class="location-type" style="background-color: #FFA600;">SPAWN</span>
+                            </div>
+                        </div>
+                        <div class="location-coords">
+                            X: 230 | Z: 250
+                        </div>
+                        <p class="location-description">
+                            The central spawn area where new players arrive. Community hub with basic resources and information.
+                        </p>
+                        <a href="index.html#rx=230&rz=250" class="map-link" target="_blank">
+                            <i class="fas fa-map-marked-alt"></i> View on Map (Red Dot)
+                        </a>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-house-user"></i>
+                            </div>
+                            <div>
+                                <span class="location-name">Willie's House</span>
+                                <span class="location-type" style="background-color: #5A7A34;">BASE</span>
+                            </div>
+                        </div>
+                        <div class="location-coords">
+                            X: 280 | Z: 250
+                        </div>
+                        <p class="location-description">
+                            Willie's personal base. Features storage, farms, and crafting areas.
+                        </p>
+                        <a href="index.html#rx=280&rz=250" class="map-link" target="_blank">
+                            <i class="fas fa-map-marked-alt"></i> View on Map (Red Dot)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-category">
+                <h2 class="category-title"><i class="fas fa-tools"></i> COMMUNITY BUILDINGS</h2>
+                <div class="location-grid">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-hat-wizard"></i>
+                            </div>
+                            <div>
+                                <span class="location-name">Enchanting Tower</span>
+                                <span class="location-type" style="background-color: #9D4EDD;">ENCHANTING</span>
+                            </div>
+                        </div>
+                        <div class="location-coords">
+                            X: 119 | Z: 443
+                        </div>
+                        <p class="location-description">
+                            Community enchanting station with multiple enchantment tables, bookshelves, and anvil setups.
+                        </p>
+                        <a href="index.html#rx=119&rz=443" class="map-link" target="_blank">
+                            <i class="fas fa-map-marked-alt"></i> View on Map (Red Dot)
+                        </a>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div>
+                                <span class="location-name">Boat Dock</span>
+                                <span class="location-type" style="background-color: #42A5F5;">TRANSPORTATION</span>
+                            </div>
+                        </div>
+                        <div class="location-coords">
+                            X: 215 | Z: 355
+                        </div>
+                        <p class="location-description">
+                            Main boat transportation hub connecting various parts of the realm via waterways.
+                        </p>
+                        <a href="index.html#rx=215&rz=355" class="map-link" target="_blank">
+                            <i class="fas fa-map-marked-alt"></i> View on Map (Red Dot)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-category">
+                <h2 class="category-title"><i class="fas fa-table"></i> QUICK REFERENCE TABLE</h2>
+                <table class="coordinates-table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Type</th>
+                            <th>X Coordinate</th>
+                            <th>Z Coordinate</th>
+                            <th>Map Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Spawn Point</td>
+                            <td><span class="location-type" style="background-color: #FFA600;">SPAWN</span></td>
+                            <td><span class="coord-highlight">230</span></td>
+                            <td><span class="coord-highlight">250</span></td>
+                            <td><a href="index.html#rx=230&rz=250" class="map-link" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Willie's House</td>
+                            <td><span class="location-type" style="background-color: #5A7A34;">BASE</span></td>
+                            <td><span class="coord-highlight">280</span></td>
+                            <td><span class="coord-highlight">250</span></td>
+                            <td><a href="index.html#rx=280&rz=250" class="map-link" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Enchanting Tower</td>
+                            <td><span class="location-type" style="background-color: #9D4EDD;">ENCHANTING</span></td>
+                            <td><span class="coord-highlight">119</span></td>
+                            <td><span class="coord-highlight">443</span></td>
+                            <td><a href="index.html#rx=119&rz=443" class="map-link" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Boat Dock</td>
+                            <td><span class="location-type" style="background-color: #42A5F5;">TRANSPORTATION</span></td>
+                            <td><span class="coord-highlight">215</span></td>
+                            <td><span class="coord-highlight">355</span></td>
+                            <td><a href="index.html#rx=215&rz=355" class="map-link" target="_blank">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="coordinate-help">
+                <h3><i class="fas fa-lightbulb"></i> HOW TO USE MAP LINKS</h3>
+                <p><strong>Clicking a "View on Map" link will:</strong></p>
+                <ol style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Open the Overworld map in a new tab</li>
+                    <li>Center the map on the coordinates</li>
+                    <li>Place a <span style="color: #FF0000;">red dot</span> at the exact location</li>
+                    <li>Zoom in to show the area clearly</li>
+                </ol>
+                
+                <p><strong>Note:</strong> The red dot is temporary and will disappear if you move the map. To return to the location, click the link again.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Terra Firma Minecraft Realm &copy; <span id="current-year"></span></p>
+            <p>Coordinates are updated regularly as the realm expands</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Make map links open in new tab
+        document.addEventListener('DOMContentLoaded', function() {
+            const mapLinks = document.querySelectorAll('.map-link');
+            mapLinks.forEach(link => {
+                link.setAttribute('target', '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -18,6 +18,9 @@
             --mc-dark-red: #7a1f1f;
             --mc-text: #f0f0f0;
             --mc-text-shadow: #3a3a3a;
+            --mc-blue: #42A5F5;
+            --mc-purple: #9D4EDD;
+            --mc-gold: #FFA600;
         }
 
         * {
@@ -169,6 +172,8 @@
             text-align: center;
             letter-spacing: 1px;
             box-shadow: 0 5px 0 var(--mc-dark-green);
+            margin: 5px;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -197,24 +202,200 @@
             box-shadow: 0 3px 0 var(--mc-dark-red);
         }
 
-        .footer {
-            text-align: center;
+        .secondary-btn {
+            background-color: var(--mc-brown);
+            border-color: var(--mc-light-brown);
+            box-shadow: 0 5px 0 var(--mc-dark-brown);
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--mc-light-brown);
+            box-shadow: 0 8px 0 var(--mc-dark-brown);
+        }
+
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* Points of Interest Section */
+        .poi-section {
             margin-top: 40px;
-            padding: 20px;
-            border-top: 2px solid var(--mc-brown);
-            width: 100%;
-            max-width: 800px;
-            color: var(--mc-light-brown);
-        }
-
-        .update-info {
-            background-color: rgba(139, 107, 61, 0.2);
-            padding: 15px;
+            background-color: rgba(90, 122, 52, 0.2);
+            border: 2px solid var(--mc-green);
             border-radius: 10px;
-            margin-top: 15px;
-            font-size: 0.9rem;
+            padding: 25px;
+            max-width: 800px;
+            width: 100%;
         }
 
+        .poi-section h3 {
+            font-family: 'Minecraftia', monospace;
+            color: var(--mc-light-green);
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .poi-form {
+            background-color: rgba(139, 107, 61, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--mc-light-brown);
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--mc-brown);
+            border-radius: 5px;
+            color: var(--mc-text);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--mc-light-green);
+        }
+
+        .coord-inputs {
+            display: flex;
+            gap: 10px;
+        }
+
+        .coord-inputs input {
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .poi-list {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .poi-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid var(--mc-green);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .poi-item-content {
+            flex: 1;
+        }
+
+        .poi-item h4 {
+            color: var(--mc-light-green);
+            margin-bottom: 5px;
+            font-family: 'Minecraftia', monospace;
+        }
+
+        .poi-coords {
+            font-family: monospace;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: var(--mc-gold);
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .poi-type {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: rgba(90, 122, 52, 0.3);
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            color: var(--mc-light-green);
+        }
+
+        .poi-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .poi-btn {
+            padding: 5px 12px;
+            background-color: var(--mc-brown);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .poi-btn:hover {
+            background-color: var(--mc-light-brown);
+        }
+
+        .poi-btn.delete {
+            background-color: var(--mc-dark-red);
+        }
+
+        .poi-btn.delete:hover {
+            background-color: var(--mc-red);
+        }
+
+        .no-poi {
+            text-align: center;
+            padding: 30px;
+            color: var(--mc-light-brown);
+            font-style: italic;
+        }
+
+        .export-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(90, 122, 52, 0.3);
+            text-align: center;
+        }
+
+        .export-btn {
+            background-color: var(--mc-purple);
+            border-color: #b97fdd;
+            box-shadow: 0 5px 0 #7b2cbf;
+        }
+
+        .export-btn:hover {
+            background-color: #b97fdd;
+            box-shadow: 0 8px 0 #7b2cbf;
+        }
+
+        /* Instructions Section */
         .instructions {
             margin-top: 40px;
             background-color: rgba(90, 122, 52, 0.2);
@@ -249,6 +430,101 @@
             margin: 0 2px;
         }
 
+        .coordinates-list {
+            margin-top: 20px;
+            background-color: rgba(139, 107, 61, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--mc-brown);
+        }
+
+        .coordinate-item {
+            margin: 8px 0;
+            padding: 5px 0;
+            border-bottom: 1px dotted rgba(139, 107, 61, 0.3);
+        }
+
+        .coord {
+            font-family: monospace;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid var(--mc-brown);
+            width: 100%;
+            max-width: 800px;
+            color: var(--mc-light-brown);
+        }
+
+        .update-info {
+            background-color: rgba(139, 107, 61, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Modal for export code */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: var(--mc-dark-brown);
+            padding: 30px;
+            border-radius: 10px;
+            border: 3px solid var(--mc-green);
+            max-width: 800px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h3 {
+            color: var(--mc-light-green);
+            font-family: 'Minecraftia', monospace;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: var(--mc-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .code-block {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
             .maps-container {
                 flex-direction: column;
@@ -269,6 +545,30 @@
             
             .map-header h2 {
                 font-size: 1.8rem;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .form-row {
+                flex-direction: column;
+            }
+            
+            .coord-inputs {
+                flex-direction: column;
+            }
+            
+            .poi-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .poi-actions {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: flex-end;
             }
         }
     </style>
@@ -297,9 +597,14 @@
                         <p class="map-description">
                             Explore the main world of Terra Firma. Discover player bases, villages, monuments, and all the amazing builds our community has created over the years.
                         </p>
-                        <a href="./overworld/index.html" class="btn">
-                            <i class="fas fa-map-marked-alt"></i> ENTER OVERWORLD
-                        </a>
+                        <div class="btn-container">
+                            <a href="./overworld/index.html" class="btn">
+                                <i class="fas fa-map-marked-alt"></i> VIEW OVERWORLD MAP
+                            </a>
+                            <a href="./overworld/key-locations.html" class="btn secondary-btn">
+                                <i class="fas fa-map-marker-alt"></i> KEY LOCATIONS
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -314,19 +619,117 @@
                         <p class="map-description">
                             Navigate the dangerous Nether dimension. Find fortresses, bastions, and the intricate network of tunnels and portals connecting our realm.
                         </p>
-                        <a href="./nether/index.html" class="btn">
-                            <i class="fas fa-fire-alt"></i> ENTER NETHER
-                        </a>
+                        <div class="btn-container">
+                            <a href="./nether/index.html" class="btn">
+                                <i class="fas fa-fire-alt"></i> VIEW NETHER MAP
+                            </a>
+                            <a href="./nether/key-locations.html" class="btn secondary-btn">
+                                <i class="fas fa-map-marker-alt"></i> KEY LOCATIONS
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Points of Interest Section -->
+            <div class="poi-section">
+                <h3><i class="fas fa-map-pin"></i> POINTS OF INTEREST</h3>
+                
+                <div class="poi-form">
+                    <h4>Add New Location</h4>
+                    <form id="poi-form">
+                        <div class="form-row">
+                            <div class="form-group" style="flex: 2;">
+                                <label for="poi-name">Location Name</label>
+                                <input type="text" id="poi-name" placeholder="e.g., Main Base, Desert Temple, Nether Hub" required>
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="poi-type">Type</label>
+                                <select id="poi-type" required>
+                                    <option value="base">Base/House</option>
+                                    <option value="spawn">Spawn Point</option>
+                                    <option value="farm">Farm</option>
+                                    <option value="village">Village</option>
+                                    <option value="mine">Mine</option>
+                                    <option value="portal">Portal</option>
+                                    <option value="enchant">Enchanting</option>
+                                    <option value="storage">Storage</option>
+                                    <option value="shop">Shop</option>
+                                    <option value="rail">Transportation</option>
+                                    <option value="nether">Nether</option>
+                                    <option value="end">End</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="poi-description">Description (Optional)</label>
+                                <input type="text" id="poi-description" placeholder="Brief description or notes">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Coordinates</label>
+                                <div class="coord-inputs">
+                                    <input type="number" id="poi-x" placeholder="X" required>
+                                    <input type="number" id="poi-z" placeholder="Z" required>
+                                    <input type="number" id="poi-y" placeholder="Y (optional)">
+                                </div>
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="poi-dimension">Dimension</label>
+                                <select id="poi-dimension">
+                                    <option value="overworld">Overworld</option>
+                                    <option value="nether">Nether</option>
+                                    <option value="end">End</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-plus-circle"></i> ADD POINT OF INTEREST
+                        </button>
+                    </form>
+                </div>
+                
+                <div id="poi-list" class="poi-list">
+                    <!-- Points will be loaded here -->
+                    <div class="no-poi" id="no-poi-message">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>No points of interest added yet. Add your first location!</p>
+                    </div>
+                </div>
+                
+                <div class="export-section">
+                    <button class="btn export-btn" id="export-btn">
+                        <i class="fas fa-code"></i> GENERATE custom.markers.js CODE
+                    </button>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: var(--mc-light-brown);">
+                        Generate JavaScript code for your Unmined map markers
+                    </p>
+                </div>
+            </div>
+
             <div class="instructions">
-                <h3>MAP NAVIGATION TIPS</h3>
+                <h3>MAP NAVIGATION GUIDE</h3>
                 <ul>
-                    <li>Use your mouse to <span class="mc-icon">Click & Drag</span> the map to move around</li>
-                    <li>Scroll with your <span class="mc-icon">Mouse Wheel</span> or use <span class="mc-icon">+/-</span> buttons to zoom in and out</li>
+                    <li><strong>Move around:</strong> <span class="mc-icon">Click & Drag</span> the map with your mouse</li>
+                    <li><strong>Zoom in/out:</strong> Use your <span class="mc-icon">Mouse Wheel</span> or the <span class="mc-icon">+</span> and <span class="mc-icon">-</span> buttons</li>
+                    <li><strong>Coordinates:</strong> Your current position is shown at the bottom of the map</li>
+                    <li><strong>Markers:</strong> Important locations may be marked with icons (if configured)</li>
                 </ul>
+                
+                <div class="coordinates-list">
+                    <h4><i class="fas fa-map-pin"></i> Important Coordinates:</h4>
+                    <div class="coordinate-item"><strong>Spawn Area:</strong> <span class="coord">X: 230, Z: 250</span></div>
+                    <div class="coordinate-item"><strong>Willie's House:</strong> <span class="coord">X: 280, Z: 250</span></div>
+                    <div class="coordinate-item"><strong>Enchanting Tower:</strong> <span class="coord">X: 119, Z: 443</span></div>
+                    <div class="coordinate-item"><strong>Boat Dock:</strong> <span class="coord">X: 215, Z: 355</span></div>
+                </div>
+                
                 <p class="update-info">
                     <i class="fas fa-sync-alt"></i> <strong>Note:</strong> Maps are updated regularly to reflect the latest changes in the Terra Firma realm.
                 </p>
@@ -340,11 +743,332 @@
         </footer>
     </div>
 
+    <!-- Modal for showing generated code -->
+    <div class="modal" id="code-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Generated custom.markers.js Code</h3>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <p>Copy this code and paste it into your <code>custom.markers.js</code> file:</p>
+            <div class="code-block" id="generated-code"></div>
+            <div class="btn-container">
+                <button class="btn" onclick="copyCode()">
+                    <i class="fas fa-copy"></i> COPY TO CLIPBOARD
+                </button>
+                <button class="btn secondary-btn" onclick="downloadCode()">
+                    <i class="fas fa-download"></i> DOWNLOAD FILE
+                </button>
+                <button class="btn secondary-btn" onclick="closeModal()">
+                    <i class="fas fa-times"></i> CLOSE
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
-        // Add some interactive effects to the buttons
+        // Points of Interest Data Storage
+        let pointsOfInterest = JSON.parse(localStorage.getItem('terraFirmaPOI')) || [];
+        
+        // Type to color mapping
+        const typeColors = {
+            'spawn': '#FFA600',
+            'base': '#5A7A34',
+            'farm': '#7BA159',
+            'village': '#8B6B3D',
+            'mine': '#666666',
+            'portal': '#A52A2A',
+            'enchant': '#9D4EDD',
+            'storage': '#D4AF37',
+            'shop': '#4CAF50',
+            'rail': '#42A5F5',
+            'nether': '#FF6B6B',
+            'end': '#9C27B0',
+            'other': '#2196F3'
+        };
+        
+        // Type to marker mapping
+        const typeMarkers = {
+            'spawn': 'marker_spawn.svg',
+            'base': 'marker_base.svg',
+            'farm': 'marker_farm.svg',
+            'village': 'marker_village.svg',
+            'mine': 'marker_mine.svg',
+            'portal': 'marker_portal.svg',
+            'enchant': 'marker_enchant.svg',
+            'storage': 'marker_storage.svg',
+            'shop': 'marker_shop.svg',
+            'rail': 'marker_rail.svg',
+            'nether': 'marker_netherhub.svg',
+            'end': 'marker_endportal.svg',
+            'other': 'marker_base.svg'
+        };
+        
+        // Type display names
+        const typeNames = {
+            'spawn': 'Spawn Point',
+            'base': 'Base/House',
+            'farm': 'Farm',
+            'village': 'Village',
+            'mine': 'Mine',
+            'portal': 'Portal',
+            'enchant': 'Enchanting',
+            'storage': 'Storage',
+            'shop': 'Shop',
+            'rail': 'Transportation',
+            'nether': 'Nether',
+            'end': 'End',
+            'other': 'Other'
+        };
+        
+        // Initialize with your existing points
+        const initialPoints = [
+            { id: 1, name: 'Spawn Point', type: 'spawn', x: 230, z: 250, y: null, dimension: 'overworld', description: 'World spawn point' },
+            { id: 2, name: 'Willie\'s House', type: 'base', x: 280, z: 250, y: null, dimension: 'overworld', description: 'Willie\'s base' },
+            { id: 3, name: 'Enchanting Tower', type: 'enchant', x: 119, z: 443, y: null, dimension: 'overworld', description: 'Community enchanting tower' },
+            { id: 4, name: 'Boat Dock', type: 'rail', x: 215, z: 355, y: null, dimension: 'overworld', description: 'Boat dock and transportation hub' }
+        ];
+        
+        // Only add initial points if storage is empty
+        if (pointsOfInterest.length === 0) {
+            pointsOfInterest = initialPoints;
+            localStorage.setItem('terraFirmaPOI', JSON.stringify(pointsOfInterest));
+        }
+        
+        // Load points on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPOIList();
+            
+            // Form submission
+            document.getElementById('poi-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                addPOI();
+            });
+            
+            // Export button
+            document.getElementById('export-btn').addEventListener('click', generateCode);
+        });
+        
+        function loadPOIList() {
+            const poiList = document.getElementById('poi-list');
+            const noPoiMessage = document.getElementById('no-poi-message');
+            
+            if (pointsOfInterest.length === 0) {
+                noPoiMessage.style.display = 'block';
+                poiList.innerHTML = '';
+                return;
+            }
+            
+            noPoiMessage.style.display = 'none';
+            
+            // Sort by name
+            pointsOfInterest.sort((a, b) => a.name.localeCompare(b.name));
+            
+            poiList.innerHTML = '';
+            
+            pointsOfInterest.forEach((poi, index) => {
+                const poiElement = document.createElement('div');
+                poiElement.className = 'poi-item';
+                poiElement.innerHTML = `
+                    <div class="poi-item-content">
+                        <h4>${poi.name} <span class="poi-type" style="background-color: ${typeColors[poi.type] + '40'}">${typeNames[poi.type]}</span></h4>
+                        ${poi.description ? `<p style="color: var(--mc-light-brown); margin-bottom: 5px;">${poi.description}</p>` : ''}
+                        <div class="poi-coords">X: ${poi.x} | Z: ${poi.z}${poi.y ? ` | Y: ${poi.y}` : ''} | ${poi.dimension.charAt(0).toUpperCase() + poi.dimension.slice(1)}</div>
+                    </div>
+                    <div class="poi-actions">
+                        <button class="poi-btn" onclick="editPOI(${index})">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="poi-btn delete" onclick="deletePOI(${index})">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                    </div>
+                `;
+                poiList.appendChild(poiElement);
+            });
+        }
+        
+        function addPOI() {
+            const name = document.getElementById('poi-name').value;
+            const type = document.getElementById('poi-type').value;
+            const description = document.getElementById('poi-description').value;
+            const x = parseInt(document.getElementById('poi-x').value);
+            const z = parseInt(document.getElementById('poi-z').value);
+            const y = document.getElementById('poi-y').value ? parseInt(document.getElementById('poi-y').value) : null;
+            const dimension = document.getElementById('poi-dimension').value;
+            
+            // Generate a unique ID
+            const id = pointsOfInterest.length > 0 ? Math.max(...pointsOfInterest.map(p => p.id)) + 1 : 1;
+            
+            const newPOI = {
+                id: id,
+                name: name,
+                type: type,
+                description: description,
+                x: x,
+                z: z,
+                y: y,
+                dimension: dimension
+            };
+            
+            pointsOfInterest.push(newPOI);
+            localStorage.setItem('terraFirmaPOI', JSON.stringify(pointsOfInterest));
+            
+            // Clear form
+            document.getElementById('poi-form').reset();
+            
+            // Reload list
+            loadPOIList();
+            
+            // Show success message
+            showMessage('Location added successfully!', 'success');
+        }
+        
+        function editPOI(index) {
+            const poi = pointsOfInterest[index];
+            
+            // Fill form with POI data
+            document.getElementById('poi-name').value = poi.name;
+            document.getElementById('poi-type').value = poi.type;
+            document.getElementById('poi-description').value = poi.description || '';
+            document.getElementById('poi-x').value = poi.x;
+            document.getElementById('poi-z').value = poi.z;
+            document.getElementById('poi-y').value = poi.y || '';
+            document.getElementById('poi-dimension').value = poi.dimension;
+            
+            // Remove from array
+            pointsOfInterest.splice(index, 1);
+            localStorage.setItem('terraFirmaPOI', JSON.stringify(pointsOfInterest));
+            
+            // Reload list
+            loadPOIList();
+            
+            showMessage('Location loaded for editing. Update and click Add to save changes.', 'info');
+        }
+        
+        function deletePOI(index) {
+            if (confirm('Are you sure you want to delete this location?')) {
+                pointsOfInterest.splice(index, 1);
+                localStorage.setItem('terraFirmaPOI', JSON.stringify(pointsOfInterest));
+                loadPOIList();
+                showMessage('Location deleted.', 'info');
+            }
+        }
+        
+        function generateCode() {
+            if (pointsOfInterest.length === 0) {
+                showMessage('No points of interest to export.', 'warning');
+                return;
+            }
+            
+            let code = `// Auto-generated markers for Terra Firma Realm
+// Generated on ${new Date().toLocaleDateString()}
+// Total points: ${pointsOfInterest.length}
+
+UnminedCustomMarkers = {
+    isEnabled: true,
+    markers: [
+`;
+            
+            pointsOfInterest.forEach((poi, index) => {
+                const marker = typeMarkers[poi.type] || 'marker_base.svg';
+                const color = typeColors[poi.type] || '#2196F3';
+                
+                code += `        // ${poi.name}
+        {
+            x: ${poi.x},
+            z: ${poi.z},
+            image: "${marker}",
+            imageAnchor: [0.5, 1],
+            imageScale: 1,
+            text: "${poi.name.replace(/"/g, '\\"')}",
+            textColor: "${color}",
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px 'Minecraftia', Arial, sans-serif"
+        }${index < pointsOfInterest.length - 1 ? ',' : ''}
+`;
+            });
+            
+            code += `    ]
+}`;
+            
+            document.getElementById('generated-code').textContent = code;
+            document.getElementById('code-modal').style.display = 'flex';
+        }
+        
+        function closeModal() {
+            document.getElementById('code-modal').style.display = 'none';
+        }
+        
+        function copyCode() {
+            const code = document.getElementById('generated-code').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                showMessage('Code copied to clipboard!', 'success');
+            });
+        }
+        
+        function downloadCode() {
+            const code = document.getElementById('generated-code').textContent;
+            const blob = new Blob([code], { type: 'text/javascript' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'custom.markers.js';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showMessage('File downloaded as custom.markers.js', 'success');
+        }
+        
+        function showMessage(message, type) {
+            // Create message element
+            const messageEl = document.createElement('div');
+            messageEl.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 20px;
+                background-color: ${type === 'success' ? '#5a7a34' : type === 'warning' ? '#FFA600' : '#2196F3'};
+                color: white;
+                border-radius: 5px;
+                z-index: 1001;
+                font-family: 'Minecraftia', monospace;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                animation: slideIn 0.3s ease;
+            `;
+            messageEl.textContent = message;
+            document.body.appendChild(messageEl);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                messageEl.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => document.body.removeChild(messageEl), 300);
+            }, 3000);
+            
+            // Add CSS for animations
+            if (!document.getElementById('message-styles')) {
+                const style = document.createElement('style');
+                style.id = 'message-styles';
+                style.textContent = `
+                    @keyframes slideIn {
+                        from { transform: translateX(100%); opacity: 0; }
+                        to { transform: translateX(0); opacity: 1; }
+                    }
+                    @keyframes slideOut {
+                        from { transform: translateX(0); opacity: 1; }
+                        to { transform: translateX(100%); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+        
+        // Add button effects
         document.addEventListener('DOMContentLoaded', function() {
             const buttons = document.querySelectorAll('.btn');
             
@@ -355,23 +1079,6 @@
                 
                 button.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0)';
-                });
-                
-                button.addEventListener('mousedown', function() {
-                    this.style.transform = 'translateY(2px)';
-                });
-                
-                button.addEventListener('mouseup', function() {
-                    this.style.transform = 'translateY(-3px)';
-                });
-            });
-            
-            // Add click sound effect for buttons (optional)
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // You could add a Minecraft click sound here
-                    // const clickSound = new Audio('minecraft_click.mp3');
-                    // clickSound.play();
                 });
             });
         });
