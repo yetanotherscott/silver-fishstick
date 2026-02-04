@@ -70,14 +70,70 @@ UnminedCustomMarkers = {
             font: "bold 12px 'Minecraftia', Arial, sans-serif"
         },
 
+        // ========== Second Base ==========
+        {
+            x: -463,
+            z: 2041,
+            image: "marker_spawn.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 1,
+            text: "Second Base",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
         // ========== WILLIE'S HOUSE ==========
         {
             x: 280,
             z: 250,
             image: "marker_base.svg",
             imageAnchor: [0.5, 1],
-            imageScale: 1,
+            imageScale: 0.3,
             text: "Willie's House",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        // ========== Ollie'S HOUSE ==========
+        {
+            x: 468,
+            z: 199,
+            image: "marker_base.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Ollie's House",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        // ========== Lilly'S HOUSE ==========
+        {
+            x: 435,
+            z: 343,
+            image: "marker_base.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Lilly's House",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        // ========== Drew'S HOUSE ==========
+        {
+            x: 346,
+            z: 317,
+            image: "marker_base.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Drew's House",
             textColor: "#FAFAF9",
             offsetX: 0,
             offsetY: 12,
@@ -102,7 +158,7 @@ UnminedCustomMarkers = {
         {
             x: 215,
             z: 355,
-            image: "marker_boat.svg", // Using rail SVG for transportation/dock theme
+            image: "marker_boat.svg",
             imageAnchor: [0.5, 1],
             imageScale: 1,
             text: "Boat Dock",
@@ -116,9 +172,9 @@ UnminedCustomMarkers = {
         {
             x: 247,
             z: 320,
-            image: "marker_base.svg", // Using rail SVG for transportation/dock theme
+            image: "marker_base.svg",
             imageAnchor: [0.5, 1],
-            imageScale: 1,
+            imageScale: 0.3,
             text: "Whitney's House",
             textColor: "#FAFAF9",
             offsetX: 0,
@@ -130,9 +186,9 @@ UnminedCustomMarkers = {
         {
             x: 281,
             z: 304,
-            image: "marker_base.svg", // Using rail SVG for transportation/dock theme
+            image: "marker_base.svg",
             imageAnchor: [0.5, 1],
-            imageScale: 1,
+            imageScale: 0.3,
             text: "Andy's House",
             textColor: "#FAFAF9",
             offsetX: 0,
@@ -144,7 +200,7 @@ UnminedCustomMarkers = {
         {
             x: 334,
             z: 356,
-            image: "marker_farm.svg", // Using rail SVG for transportation/dock theme
+            image: "marker_farm.svg",
             imageAnchor: [0.5, 1],
             imageScale: 1,
             text: "Greenhouse",
@@ -158,7 +214,7 @@ UnminedCustomMarkers = {
         {
             x: 365,
             z: 383,
-            image: "marker_farm.svg", // Using rail SVG for transportation/dock theme
+            image: "marker_farm.svg",
             imageAnchor: [0.5, 1],
             imageScale: 1,
             text: "Barn",
@@ -167,6 +223,362 @@ UnminedCustomMarkers = {
             offsetY: 12,
             font: "bold 12px 'Minecraftia', Arial, sans-serif"
         },
+
+        // ========== Outposts ==========
+        {
+            x: 425,
+            z: -523,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 620,
+            z: 1142,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 910,
+            z: 977,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 514,
+            z: 1220,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 927,
+            z: 1425,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 120,
+            z: 1677,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 456,
+            z: 516,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -320,
+            z: 185,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 274,
+            z: -947,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -1903,
+            z: -1157,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -708,
+            z: 14,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1327,
+            z: 313,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1265,
+            z: 193,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 610,
+            z: 266,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1415,
+            z: -464,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1942,
+            z: -476,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 2221,
+            z: 1314,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.03,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        //  ========== Portals ==========
+        {
+            x: 285,
+            z: -957,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -1915,
+            z: -1149,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 257,
+            z: 291,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1348,
+            z: 308,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1422,
+            z: -482,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1935,
+            z: -472,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 4748,
+            z: 1005,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -379,
+            z: 2597,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -283,
+            z: 2058,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 22,
+            z: 1636,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+
+        // 
         // You can add more markers below as your realm grows
         // Just copy the format above and change the coordinates/image/text
         // {
