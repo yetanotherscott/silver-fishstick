@@ -459,6 +459,19 @@ UnminedCustomMarkers = {
             font: "bold 12px 'Minecraftia', Arial, sans-serif"
         },
 
+        {
+            x: -1903,
+            z: -1156,
+            image: "tent.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Outpost",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
         //  ========== Portals ==========
         {
             x: 285,
@@ -632,6 +645,19 @@ UnminedCustomMarkers = {
         {
             x: -1143,
             z: 2238,
+            image: "marker_portal.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -1915,
+            z: -1148,
             image: "marker_portal.svg",
             imageAnchor: [0.5, 1],
             imageScale: 0.3,
