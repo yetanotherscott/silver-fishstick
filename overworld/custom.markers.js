@@ -459,19 +459,6 @@ UnminedCustomMarkers = {
             font: "bold 12px 'Minecraftia', Arial, sans-serif"
         },
 
-        {
-            x: -1903,
-            z: -1156,
-            image: "tent.svg",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.3,
-            text: "Outpost",
-            textColor: "#FAFAF9",
-            offsetX: 0,
-            offsetY: 12,
-            font: "bold 12px 'Minecraftia', Arial, sans-serif"
-        },
-
         //  ========== Portals ==========
         {
             x: 285,
@@ -656,12 +643,209 @@ UnminedCustomMarkers = {
         },
 
         {
-            x: -1915,
-            z: -1148,
+            x: 1897,
+            z: -1933,
             image: "marker_portal.svg",
             imageAnchor: [0.5, 1],
             imageScale: 0.3,
             text: "Portal",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        // ========== Villages ==========
+
+        {
+            x: 748,
+            z: 125,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 157,
+            z: -1011,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -1437,
+            z: -274,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -1611,
+            z: -932,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -314,
+            z: 733,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -251,
+            z: 1229,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1917,
+            z: 149,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: -724,
+            z: 2005,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1702,
+            z: 731,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 1364,
+            z: 1167,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 2233,
+            z: 1965,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 3531,
+            z: 3541,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 2236,
+            z: 116,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 2907,
+            z: 283,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
+            textColor: "#FAFAF9",
+            offsetX: 0,
+            offsetY: 12,
+            font: "bold 12px 'Minecraftia', Arial, sans-serif"
+        },
+
+        {
+            x: 3417,
+            z: -329,
+            image: "marker_village.svg",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+            text: "Village",
             textColor: "#FAFAF9",
             offsetX: 0,
             offsetY: 12,
